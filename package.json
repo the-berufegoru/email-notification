@@ -1,0 +1,35 @@
+{
+  "name": "email-notification",
+  "version": "1.0.0",
+  "description": "nodejs send mail example using nodemailer and mailgen to generate email template",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elregalo/email-notification.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "nodemailer",
+    "mailgen",
+    "email"
+  ],
+  "author": "Moobi Kabelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elregalo/email-notification/issues"
+  },
+  "homepage": "https://github.com/elregalo/email-notification#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mailgen": "^2.0.26",
+    "nodemailer": "^6.7.5"
+  }
+}

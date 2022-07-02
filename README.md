@@ -21,5 +21,5 @@
 
 # Author
 ```plain
-- Moobi Kabelo
+- Moobi Kabelo <elregalo>
 ```

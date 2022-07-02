@@ -1,5 +1,13 @@
+/**
+ * @author - Moobi Kabelo <@elregalo>
+ */
 import { mailGenerator } from "../config/email.js";
 
+/**
+ * It takes a string as an argument and returns an object
+ * @param fullNames - The name of the recipient.
+ * @returns an object with a body property.
+ */
 export const emailTemplate = (fullNames) => {
   const email = {
     body: {

@@ -1,3 +1,6 @@
+/**
+ * @author - Moobi Kabelo <@elregalo>
+ */
 import bodyParser from "body-parser";
 import express from "express";
 import dotenv from "dotenv";
@@ -11,6 +14,7 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+/* A POST request that is being sent to the server. */
 app.post("/contact", (req, res) => {
   const { email, fullNames } = req.body;
 

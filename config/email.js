@@ -1,10 +1,14 @@
+/**
+ * @author - Moobi Kabelo <@elregalo>
+ */
 import dotenv from "dotenv";
 import Mailgen from "mailgen";
 import nodemailer from "nodemailer";
 dotenv.config();
 
+/* Creating a transporter object that will be used to send emails. */
 export const transporter = nodemailer.createTransport({
-  host: process.env.MAILER_HOST, 
+  host: process.env.MAILER_HOST,
   port: process.env.MAILER_PORT,
   auth: {
     user: process.env.MAILER_USERNAME,
@@ -12,6 +16,7 @@ export const transporter = nodemailer.createTransport({
   },
 });
 
+/* Creating a new instance of the mailgen class. */
 export const mailGenerator = new Mailgen({
   theme: "default",
   product: {
